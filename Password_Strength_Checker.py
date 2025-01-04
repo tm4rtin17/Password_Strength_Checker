@@ -31,7 +31,16 @@ def check_password():
     if password_contains_uppercase == False:
         print("- Add an uppercase letter.")
     if password_contains_special == False:
-        print("- Add a special character or symbol (!@#$%^&*()-+?_=,<>/).")
+        print("- Add a special character or symbol '!@#$%^&*()-+?_=,<>/.'")
     
-
+#Initial Function Call
 check_password()
+
+#While loop for re-runs
+while True:
+    run_again = pyip.inputYesNo("Would you like to check another password or retry? (y/n)")
+    if run_again == "yes":
+        check_password()
+    else:
+        print("Thanks for keeping your passwords secure!")
+        break
