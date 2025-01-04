@@ -69,6 +69,14 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ---
 
+## Future Improvements
+- Update password strength to a score based system to eliminate "hard coding" password requirements.
+- Break logic into smaller functions to make the code more maintainable.
+- Optimize re-runs by giving users the option to exit the program by typing "exit" at any time.
+- Simplify variable naming
+
+---
+
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
