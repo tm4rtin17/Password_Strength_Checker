@@ -14,6 +14,7 @@ This Python program allows users to verify the strength of their passwords. Base
 - **Dynamic Feedback:** Offers suggestions to improve password strength based on criteria.
 - **Loop for Reuse:** Users can check multiple passwords in a single session.
 - **Secure Input Handling:** Uses the `pyinputplus` library for password entry validation.
+- **Exit Option:** Close the program by typing 'q'.
 
 ---
 
@@ -53,13 +54,13 @@ This Python program allows users to verify the strength of their passwords. Base
 ## Example
 ### Input:
 ```
-Enter the password you would like to verify: Secure@123
+Enter the password you would like to verify [Enter 'q' at to exit program.]: Secure@123
 ```
 ### Output:
 ```
 Your password is strong
 - Increase password length by 4 characters.
-Would you like to check another password or retry? (y/n): 
+Would you like to check another password? (y/n): 
 ```
 
 ---
@@ -71,10 +72,6 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## Future Improvements
 - Update password strength to a score based system to eliminate "hard coding" password requirements.
-- Break logic into smaller functions to make the code more maintainable.
-- Optimize re-runs by giving users the option to exit the program by typing "exit" at any time.
-- Simplify variable naming
-
 ---
 
 ## License
