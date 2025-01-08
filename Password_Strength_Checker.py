@@ -1,6 +1,5 @@
 import pyinputplus as pyip
 import sys
-import time
 
 #User inputs a password
 def input_password():
@@ -11,7 +10,6 @@ def input_password():
     contains_special = any(char in special_char for char in password)
     if password == 'q': #Ends program
         print("See you next time!")
-        time.sleep(1)
         sys.exit()
     else:
         return pass_length, contains_upper, contains_special
