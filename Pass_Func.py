@@ -42,20 +42,8 @@ def pass_results(rating, pass_length, contains_upper, contains_special):
         print("- Add an uppercase letter.")
     if contains_special == False:
         print("- Add a special character or symbol '!@#$%^&*()-+?_=,<>/.'")
-    
-#Initial Function Call
-pass_length, contains_upper, contains_special = input_password()
-rating = pass_strength(pass_length, contains_upper, contains_special)
-pass_results(rating, pass_length, contains_upper, contains_special)
 
-#While loop for re-runs
-while True:
-    run_again = pyip.inputYesNo("Would you like to check another password? (y/n)")
-    if run_again == "yes":
-        #Runs the same 3 functions as the initial calling
-        pass_length, contains_upper, contains_special = input_password()
-        rating = pass_strength(pass_length, contains_upper, contains_special)
-        pass_results(rating, pass_length, contains_upper, contains_special)
-    else:
-        print("Thanks for keeping your passwords secure!")
-        break
+def main():
+    pass_length, contains_upper, contains_special = input_password()
+    rating = pass_strength(pass_length, contains_upper, contains_special)
+    pass_results(rating, pass_length, contains_upper, contains_special)

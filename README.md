@@ -1,4 +1,4 @@
-# Password Strength Checker
+# Password Strength Checker v1.0.1
 
 ## Description
 This Python program allows users to verify the strength of their passwords. Based on specific criteria such as length, the presence of uppercase letters, and special characters, the program assigns a strength rating to the password (“weak,” “average,” “strong,” or “very strong”). It also provides feedback on how users can improve their password strength.
@@ -67,6 +67,14 @@ Would you like to check another password? (y/n):
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your updates or improvements.
+
+---
+## Changelog v1.0.1
+Several flow improvements made to make code more readable and helps the code appear more organized.
+
+- Created a second program `Main.py` to house the main control flow of the program.
+- Kept all of the functions on `Pass_Func.py` for separation from the main program.
+- Created `main()` which calls for user input and the the linked functions for checking the password.
 
 ---
 
